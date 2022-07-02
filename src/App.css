@@ -1,0 +1,8 @@
+.componant-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/05/16/27/background-3063287_960_720.jpg);
+}
