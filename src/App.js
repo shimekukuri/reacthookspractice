@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import MemoPractice from "./componants/useMemo.js";
 import UseCallbackPractice from "./componants/useCallback";
+import UseReducerPractice from "./componants/useReducer";
 
 function App() {
   const [selectedComponant, setSelectedComponant] = useState();
@@ -19,12 +20,14 @@ function App() {
           <option value={`selectComponent`}>
             Select a componant to render
           </option>
-          <option value={`memo`}>MemoPractice</option>
-          <option value={`callback`}>UseCallbackPractice</option>
+          <option value={`memo`}>useMemo Practice</option>
+          <option value={`callback`}>useCallback Practice</option>
+          <option value={`reducer`}>useReducer Practice</option>
         </select>
       </div>
       {selectedComponant === `memo` && <MemoPractice />}
       {selectedComponant === `callback` && <UseCallbackPractice />}
+      {selectedComponant === `reducer` && <UseReducerPractice />}
     </>
   );
 }
