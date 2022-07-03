@@ -18,8 +18,6 @@ export default function UseCallbackPractice() {
     color: theme ? "black" : "white",
   };
 
-  const didChange = useEffect(() => {});
-
   return (
     <>
       <div style={getTheme}>
@@ -31,7 +29,7 @@ export default function UseCallbackPractice() {
           onChange={(e) => setItemsList(parseInt(e.target.value))}
           placeholder="enter a number"
         />
-        <List getItemsList={getItemsList} didChange={didChange} />
+        <List getItemsList={getItemsList}/>
       </div>
     </>
   );
